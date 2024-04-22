@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-primary">
+    <Layout>
+    <!-- Title and floating nav -->
+    <div class="p-2 md:p-4 lg:p-10 bg-no-repeat bg-center bg-cover container mx-auto relative"> <!-- Adding relative positioning -->
+    
+    
+        <!-- hero -->
+        <div class="flex flex-col max-w-7xl text-white relative z-10"> <!-- Adding z-index to ensure hero content is above the overlay -->
+            <div class="flex flex-col text-white mt-1">
+                <h1 class="text-4xl md:text-[50px] leading-tight font-semibold font-typography">Designs</h1>
+            </div>
+            <div class="absolute top-40 left-full transform -translate-y-1/2 mr-auto"> <!-- Adjusted margin-right (mr-auto) -->
+                <div class="flex flex-col items-end "> <!-- Updated to flex-col and items-end -->
+                    <a href="/profile" class="hover:underline underline-offset-4 text-white font-secondary py-2 px-4">
+                        Profile
+                    </a>
+                    <a href="/design" class="hover:underline underline-offset-4 text-2xl text-white font-secondary py-2 px-4">
+                        Designs
+                    </a>
+                    <a href="/resume" class="hover:underline underline-offset-4 text-white font-secondary py-2 px-4">
+                        Resume
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     
+    </div>
+    
+
+    <!-- cards -->
+    <div class="relative mb-20">
+
+         <!-- overlay -->
+     <div class="absolute inset-0 flex justify-center z-0"> <!-- Using absolute positioning to stack the overlay behind -->
+        <!-- This container centers the background image -->
+        <img src="/public/assets/RC-vector.svg" alt="Rosmelle Cuevas" class="w-max">
+    </div>
+
+    
+    <div class="mx-auto w-2/4 py-5">
+        <div class="p-4 relative flex flex-col items-center rounded-2xl transition-all duration-500 md:flex-row bg-accent">
+            <div class="block overflow-hidden w-full">
+                <img src="/assets/gocreate.png" alt="Card image" class="h-full rounded-2xl object-cover" />
+            </div>
+            <div class="p-4">
+                <h4 class="text-base font-typography text-white mb-2 capitalize transition-all duration-500 ">Go Create!</h4>
+                <p class="text-sm font-secondary text-white transition-all duration-500 leading-5 mb-5"> College project, an ecommerce for arts and galleries</p>
+                <a href="https://abasushi.github.io/gocreate/?fbclid=IwAR0lrpkUSmlrpD_cuAHs2gWk50_uQhkPQYTgYS80-BbOeyCIMHPWOpaIO74"  target="blank" class="bg-secondary2 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold">Visit site</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mx-auto w-2/4">
+        <div class="p-4 relative flex flex-col items-center rounded-2xl transition-all duration-500 md:flex-row bg-accent">
+            <div class="block overflow-hidden w-full">
+                <img src="/assets/portfolio1.png" alt="Card image" class="h-full rounded-2xl object-cover" />
+            </div>
+            <div class="p-4">
+                <h4 class="text-base font-typography text-white mb-2 capitalize transition-all duration-500 ">Portfolio Ver.1</h4>
+                <p class="text-sm font-secondary text-white transition-all duration-500 leading-5 mb-5"> My first portfolio displaying my designs on web and pubmats </p>
+                <a href="https://rosmellecaves.github.io/Portfolio/index.html"  target="blank" class="bg-secondary2 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold">Visit site</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mx-auto w-2/4 py-5">
+        <div class="p-4 relative flex flex-col items-center rounded-2xl transition-all duration-500 md:flex-row bg-accent">
+            <div class="block overflow-hidden w-full">
+                <img src="/assets/gthrift.png" alt="Card image" class="h-full rounded-2xl object-cover" />
+            </div>
+            <div class="p-4">
+                <h4 class="text-base font-typography text-white mb-2 capitalize transition-all duration-500 ">G! Thriftin</h4>
+                <p class="text-sm font-secondary text-white transition-all duration-500 leading-5 mb-5"> First sample design as an aspiring web designer </p>
+                <a href="https://dribbble.com/shots/22708342-G-Thriftin-Mockup-Web-Design"  target="blank" class="bg-secondary2 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold">Visit site</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto w-2/4 py-5">
+        <div class="p-4 relative flex flex-col items-center rounded-2xl transition-all duration-500 md:flex-row bg-accent">
+            <div class="block overflow-hidden w-full">
+                <img src="/assets/welabel.png" alt="Card image" class="h-full rounded-2xl object-cover" />
+            </div>
+            <div class="p-4">
+                <h4 class="text-base font-typography text-white mb-2 capitalize transition-all duration-500 ">We Label</h4>
+                <p class="text-sm font-secondary text-white transition-all duration-500 leading-5 mb-5"> Another sample design which also includes an admin login </p>
+                <a href="https://dribbble.com/shots/22708254-We-Label-Mockup-Web-Design"  target="blank" class="bg-secondary2 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold">Visit site</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto w-2/4 py-5">
+        <div class="p-4 relative flex flex-col items-center rounded-2xl transition-all duration-500 md:flex-row bg-accent">
+            <div class="block overflow-hidden w-full">
+                <img src="/assets/thesis.png" alt="Card image" class="h-full rounded-2xl object-cover" />
+            </div>
+            <div class="p-4">
+                <h4 class="text-base font-typography text-white mb-2 capitalize transition-all duration-500 ">Filipino Time</h4>
+                <p class="text-sm font-secondary text-white transition-all duration-500 leading-5 mb-5"> Thesis from my undergraduate program which showcames a game called Filipino Time </p>
+                <a href="https://punzaman.itch.io/filipino-time?fbclid=IwAR1NjDpmM6Lq_EEKFvAgmIRp7UPOyYlSwjab-msk3P-hQYvDM4vB8TL7I7Y"  target="blank" class="bg-secondary2 shadow-sm rounded-full py-2 px-5 text-xs text-white font-semibold">Visit site</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </Layout>
+</body>
+</html>
